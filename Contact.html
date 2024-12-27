@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+    <style>
+        body {
+            background-color: beige;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+       
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: lightgray;
+            color: rgb(242, 242, 247);
+        }
+
+       
+        #fot1 {
+            color: aqua;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #mailto {
+            color: green;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        #tel {
+            color: green;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About us</a>
+        <a href="Contact.html">Contact us</a>
+        <a href="Feadback.html">Feedback</a>
+    </nav>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer id="fot1">
+        <a href="tel:555-666-7777" id="tel">555-666-7777</a>
+        <a href="mailto:skyler@example.com" id="mailto">skyler@example.com</a>
+    </footer>
+</body>
+
+</html> 
